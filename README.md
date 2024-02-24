@@ -1,6 +1,10 @@
+![1](https://github.com/solabest/Netflix-Clone/assets/122595521/4440b57e-6a8f-4680-a261-ecf70c9e58b6)
+
+
+![2](https://github.com/solabest/Netflix-Clone/assets/122595521/01968240-01b2-4ca0-9a89-bcbdbf07553e)
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
