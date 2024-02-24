@@ -24,21 +24,22 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         })()
     }, [fetchUrl]);
 
+    //on click to show the trailer of the movie
     const handleClick = (movie) => {
         if (trailerUrl) {
             setTrailerUrl('')
         } else {
-            movieTrailer(movie?.title || movie?.name || movie?.original_name)
+            movieTrailer(movie?.title || movie?.name || movie?.original_name)//returns movie trailer url by using its name from youtube
                 .then((url) => {
                    // console.log(url)
                     const urlParams = new URLSearchParams(new URL(url).search)
                     // console.log(urlParams)
                    // console.log(urlParams.get('v'))
-                    setTrailerUrl(urlParams.get('v'));
+                    setTrailerUrl(urlParams.get('v')); //returns the trailer id ?v=...
                 })
         }
     }
-
+//youtube video css property
     const opts = {
         height: '390',
         width: "100%",
@@ -58,6 +59,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
                     />
                 ))}
             </div>
+            {/* Displaying the trailer if exist by using youtube module */}
             <div style={{ padding: '40px' }}>
                 {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
             </div>
