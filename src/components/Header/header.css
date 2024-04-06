@@ -10,7 +10,6 @@
     transition:all 0.5s;
     transition-timing-function: ease-in;
     z-index: 1;
-   
 }
 .nav__black{
     background-color:  rgb(20, 20, 20);
