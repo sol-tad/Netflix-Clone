@@ -10,7 +10,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 
     const base_url = "https://image.tmdb.org/t/p/original";
 
-
     useEffect(() => {
         (async () => {
             try {
@@ -47,7 +46,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             autoplay: 1,
         },
     }
-
     return (
         <div className="row">
             <h1>{title}</h1>
